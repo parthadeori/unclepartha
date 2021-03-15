@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pexels-asad-photo-maldives-3293148.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: green;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+nav .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+nav .navigation {
+  position: relative;
+  display: flex;
+}
+
+nav .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#owner {
+  color: white;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pexels {
+  text-decoration: none;
+  color: white;
+}
+
+.pexels:hover {
+  color: yellow;
+}
+
+.change-text:before {
+  content: '';
+  animation-name: tagline;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tagline {
+  0% {
+    content: "123...";
+  }
+
+  10% {
+    content: "Hello World";
+  }
+
+  20% {
+    content: "नमस्ते दुनिया 🇮🇳"
+  }
+
+  30% {
+    content: "Olá Mundo 🇧🇷";
+  }
+
+  40% {
+    content: "Selam Dünya 🇹🇷"
+  }
+
+  50% {
+    content: "Bonjour le monde 🇫🇷";
+  }
+
+  60% {
+    content: "Hola Mundo 🇪🇸"
+  }
+
+  70% {
+    content: "Kamusta Mundo 🇵🇭"
+  }
+
+  80% {
+    content: "Hallo Welt 🇩🇪"
+  }
+
+  90% {
+    content: "Ciao mondo 🇮🇹"
+  }
+
+  100% {
+    content: "Ah! Here We Go Again"
+  }
+}
+
+.blog {
+  width: 50%;
+  height: 100vh;
+}
+
+#yakuza {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.blogcapital {
+  margin-top: 150px;
+  height: 70%;
+  text-align: center;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.blogcontent {
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 700px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  .logo {
+    position: fixed;
+  }
+
+  nav {
+    background: none;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+    margin: auto;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navigation.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .navigation li {
+    opacity: 0;
+  }
+
+  nav .navigation li a {
+    color: black;
+  }
+
+  .navigation li a {
+    font-size: 25px;
+  }
+
+  .navigation li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(3) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(4) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(5) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(6) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navigation li:nth-child(7) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+
+  .text-block {
+    background: none;
+    left: 0;
+    bottom: 60px;
+  }
+
+  footer {
+    color: white;
+  }
+
+  .blog {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .text-block {
+    background: none;
+    left: 0;
+    bottom: 60px;
+  }
+
+  footer {
+    color: white;
+  }
+}
